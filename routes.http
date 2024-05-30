@@ -1,0 +1,27 @@
+POST http://localhost:5555/videos
+Content-Type: application/json
+
+{
+    "title": "Video Node",
+    "description": "Esse é o vídeo node",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:5555/videos
+
+###
+PUT http://localhost:5555/videos/2efc1a70-d193-4885-a7af-74c4fcf267f0
+Content-Type: application/json
+
+{
+    "title": "Video Node Novo",
+    "description": "Esse é o vídeo node alterado",
+    "duration": 150
+}
+
+
+###
+
+DELETE http://localhost:5555/videos/2efc1a70-d193-4885-a7af-74c4fcf267f0
